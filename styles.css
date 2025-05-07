@@ -1,0 +1,114 @@
+
+
+.header {
+    background: linear-gradient(45deg, cornflowerblue, salmon, darkslateblue);
+    background-size: 400% 400%;
+    height: 100vh;
+    animation: animate 5s infinite alternate;
+}
+
+
+.navbar {
+    background: transparent !important; /* Prioridade Máxima */
+}
+
+
+.navbar-brand {
+    color: #fff;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+}
+
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+    color: #fff !important;
+}
+
+
+.nav-link {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+}
+
+
+.carousel-item {
+    margin-top: 25%;
+}
+
+
+.carousel-item h1 {
+    font-size: 5em;
+    color: #fff;
+    font-family: bebas neue, sans-serif;
+}
+
+
+.carousel-item p {
+    color: #fff;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-family: montserrat;
+    padding: 0 25%;
+    line-height: 1.5;
+}
+
+
+@keyframes animate {
+
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .navbar-nav {
+        background: #fff;
+    }
+
+    .nav-link {
+        color: #202020;
+    }
+
+    .carousel-item {
+        margin-top: 50%;
+    }
+
+    .carousel-item p {
+        padding: 0 10%;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        background: #fff;
+    }
+
+    .nav-link {
+        color: #202020;
+    }
+
+    .carousel-item {
+        margin-top: 75%;
+    }
+
+    .carousel-item h1 {
+        font-size: 40px;
+    }
+
+    .carousel-item p {
+        font-size: 1em;
+        padding: 0 2%;
+    }
+
+}
